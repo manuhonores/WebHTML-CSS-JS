@@ -1,0 +1,289 @@
+h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+    float: left;
+}
+
+.botonera {
+    float: right;
+}
+
+.color-header {
+    background-color:black;
+    margin: 0%;
+    /* Esto es para que se mueva con el scroll */
+    position: fixed; 
+    top: 0; 
+    width:100%; 
+}
+
+.item {
+    display: inline-block;
+    margin: 0px 10px;
+    text-transform: uppercase;
+    padding: 15px;
+    font-size: 25px;
+    color: white;
+}
+
+
+
+.clear {
+    clear: both;
+}
+
+.imagen-ppl {
+    background-image: url(imagenes/principal.png);
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    padding-top: 80px; 
+}
+
+.imagen-cuerpo {
+    background-image: url(imagenes/barro.png);
+    
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    
+}
+
+.imagen-cuerpo-2 {
+    background-image: url(imagenes/woman.png);
+    
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    
+    
+}
+
+.imagen-cuerpo-3 {
+    background-image: url(imagenes/agua.png);
+    
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    
+}
+
+h2 {
+    text-align: center;
+    border-color: black;
+    border: 3px;
+    border-style: solid;
+    margin: 0;
+    width: 600px;
+    margin-left: 30%;
+    margin-top: 3px;
+    font-size: 45px;
+}
+
+.estilo-texto {
+    font-style: italic;
+    font-size: larger;
+    margin-top: 10%;
+}
+
+.social-bar {
+    float: right;
+}
+
+.inline {
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 60px;
+    float: left;
+}
+
+.contenido { /* Clase para poner al div siguiente al menú ya que si no el menú desplazante lo tapa */
+    padding-top: 80px;
+}
+
+/* Lista Tarifas */
+
+.lista-inscripcion {
+    font-size: 25px;
+    clear: both;
+}
+
+.lista-inscripcion a {
+    color: black;
+    font-style: italic;
+}
+
+.vikingo-tarifas {
+    float: right;
+    width: 15%;
+}
+
+/* Fin Lista Tarifas */
+
+.form-style {
+    border-style: solid;
+    border-color: black;
+    border: 5px;
+    margin-bottom: 30px;
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+  
+input:valid {
+    border: 1px solid green;
+}
+
+fieldset {
+    width: 60%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; 
+}
+
+.imagenes {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 600px;
+}
+
+.texto-imagen {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+/* Estilos nuevos de la tabla */
+
+.tarifa-sugerida {
+    font-style: italic;
+    font-weight: bold;
+}
+
+table{
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+table, td, th {
+	border: 2px solid orange;
+	padding:20px;
+}
+
+button {
+	color:white;
+	font-weight:bold;
+	background-color:orange;
+	width:100px;
+	height:25px;
+	font-size:15px;
+}
+
+.tablita-estilo-none {
+	display: none;
+}
+
+.fondo {
+	background-color: cornsilk;
+}
+
+.descuento {
+	font-size: 30px;
+	color: red;
+}
+
+.centrar {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+/* Fin estilos tabla */
+
+/* Responsive */
+
+@media only screen and (max-width: 600px) {
+    
+    .imagenes {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 200px;
+    }
+
+    h1 {
+        text-align: center;
+        float: none;
+    }
+
+    .botonera {
+        display: flex;
+        float: none;
+        padding-left: 0;
+    }
+
+    .botonera li {
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+    }
+
+    .imagen-ppl {
+        height: 300px;
+    }
+
+    .vikingo-index {
+        display: none;
+    }
+
+    .social-bar {
+        float: none;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    h2 {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    fieldset {
+        width: 90%;
+    }
+
+    .lista-inscripcion p {
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    table, td, th {
+        border: 2px solid orange;
+        padding:10px;
+        font-size: 10px;
+    }
+
+    .vikingo-tarifas {
+        display: none;
+    }
+
+    button {
+        font-size: 13px;
+        width: 90px;
+    }
+}
+
+.save {
+    display: none;
+}
+
+.edit {
+    display: block;
+}

@@ -1,0 +1,77 @@
+<div class="contenido">
+    <h3>Tarifas</h3>
+    <img src="imagenes/vikingo2.png" alt="vikingo2" class="vikingo-tarifas">
+</div>
+
+<section class="lista-inscripcion">    
+    <p>Inscripciones</p>
+    <ol>
+        <li>Preinscripcion 22 de abril</li>
+        <li>Podran inscribirse a traves de <a href="https://rocargentina.com" target="_blank">www.rocargentina.com</a></li>
+        <li>El cupo se valida cuando se realiza el pago</li>
+    </ol>
+</section>
+
+
+<!-- Tabla con tarifas -->
+<p>Se aceptan sugerencias de equipos, a continuación agregar los datos pedidos:</p>
+
+<form>
+    <p>
+        <label>Ingrese la cantidad de participantes: </label>
+        <p>
+            <input id="cantidad_participantes" type="text">
+        </p>
+    </p>
+    <p>
+        <label>Ingrese la <span class="tarifa-sugerida">tarifa sugerida</span> (solo ingrese numeros): </label>
+        <p>
+            <input id="tarifa_sugerida" type="text">
+        </p>
+    </p>
+    <p>
+    <button id="add_sugerencia" type="button">Sugerir</button>
+
+    <button id="adicionar3" type="button">Adicionar 3</button>
+    </p>
+
+    <p class="descuento">
+        Las tarifas mayores a $1500, poseen un 20% de descuento
+    </p>
+
+    
+    <label> Cadena a buscar: </label>
+    <input id="searchTerm" type="text">
+    
+</form>
+
+<div class="centrar">
+    <table id="datos">
+        <thead>
+            <tr>
+                <th>Participantes (equipos)</th>
+                <th>Tarifas</th>
+                <th>Tarifa con descuento</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="tabla">
+
+        </tbody>
+    </table>
+</div>
+
+<footer>
+    <div class="clear">
+        <img src="imagenes/publicidad.png" alt="publicidad" width="100%">
+    </div>
+
+    <div>
+        <ul class="social-bar">
+            <li class="item"><a href="https://facebook.com" target="_blank"><img src="imagenes/Imagenes-redes-sociales/facebook.png" width="35px" height="35px"></a></li>
+            <li class="item"><a href="https://instagram.com" target="_blank"><img src="imagenes/Imagenes-redes-sociales/Instagram.png" width="35px" height="35px"></a></li>
+            <li class="item"><a href="https://twitter.com" target="_blank"><img src="imagenes/Imagenes-redes-sociales/twitter.png" width="35px" height="35px"></a></li>
+        </ul>
+    </div>
+</footer>
+

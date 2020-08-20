@@ -1,0 +1,99 @@
+<div class="contenido"></div> <!-- La clase contenido hace que lo que sigue acá arranque 80 pixeles abajo para que no lo tape el menu (botonera) -->
+
+<div class="form-style">
+    <form>
+        <p> 
+            <label for="nombre"> Nombre: </label> 
+            <input type="text" name="nombre" value="" required/> 
+            <label for="apellido">Apellido: </label>
+            <input type="text" apellido="apellido" value="" required/> 
+        </p>
+
+        <fieldset>
+            <legend>Sexo</legend>
+                <input type="radio" required name="sexo" value="masculino"> Masculino
+                <input type="radio" required name="sexo" value="femenino"> Femenino
+                <input type="radio" required name="sexo" value="otro"> Otro <br>
+        </fieldset>
+
+        <p>
+            <fieldset>
+                <legend>Cuestionario</legend>
+                <p>
+                    <label>¿Padece alguna enfermedad actual o cronica?</label>
+                    <p>
+                        <input type="radio" required name="cronica" value=""> Si
+                        <input type="radio" required name="cronica" value=""> No
+                    </p>
+                </p>
+                <p>
+                    <label>¿Te han realizado alguna intervención quirurgica?</label>
+                    <p>
+                        <input type="radio" required name="quirurgica" value=""> Si
+                        <input type="radio" required name="quirurgica" value=""> No
+                    </p>
+                </p>
+                <p>
+                    <label>¿Tomas actualmente algún medicamento, pastillas o utilizas algún inhalador?</label>
+                    <p>
+                        <input type="radio" required name="pastillas" value=""> Si
+                        <input type="radio" required name="pastillas" value=""> No
+                    </p>
+                </p>
+                <p>
+                    <label>¿Tiene dolores en el pecho producidos por la actividad física?</label>
+                    <p>
+                        <input type="radio" required name="pecho" value=""> Si
+                        <input type="radio" required name="pecho" value=""> No
+                    </p>
+                </p>
+                <p>
+                    <label>¿Tiende a perder el conocimiento, o el equilibrio, como resultado de mareos?</label>
+                    <p>
+                        <input type="radio" required name="mareos" value=""> Si
+                        <input type="radio" required name="mareos" value=""> No
+                    </p>
+                </p>
+                <p>
+                    <label>¿Tiene alguna alteración ósea o articular que podría agravarse por la actividad física propuesta?</label>
+                    <p>
+                        <input type="radio" required name="osea" value=""> Si
+                        <input type="radio" required name="osea" value=""> No
+                    </p>
+                </p>
+            </fieldset>
+        </p>
+
+        <p>    
+            <label for="mail">Direccion de correo electronico: </label>
+            <input type="email" required id="mail" name="mail">
+        </p>
+
+        <p>
+            <p><label for="coments">Comentarios: </label></p>
+            <textarea name="comentario" rows="8" cols="40"></textarea>
+        </p>
+
+        <input type="text" id="captcha" disabled>
+        <input type="text" id="ingreso">
+        <button id="refresh">Reset</button>
+        <h4 id="error"></h4>
+
+        <input type="submit" id="send" value="Enviar">
+
+    </form> 
+</div>
+
+<footer>
+    <div class="clear">
+        <img src="imagenes/publicidad.png" alt="publicidad" width="100%">
+    </div>
+
+    <div>
+        <ul class="social-bar">
+            <li class="item"><a href="https://facebook.com" target="_blank"><img src="imagenes/Imagenes-redes-sociales/facebook.png" width="35px" height="35px"></a></li>
+            <li class="item"><a href="https://instagram.com" target="_blank"><img src="imagenes/Imagenes-redes-sociales/Instagram.png" width="35px" height="35px"></a></li>
+            <li class="item"><a href="https://twitter.com" target="_blank"><img src="imagenes/Imagenes-redes-sociales/twitter.png" width="35px" height="35px"></a></li>
+        </ul>
+    </div>
+</footer>
